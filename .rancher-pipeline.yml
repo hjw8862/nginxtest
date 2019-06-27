@@ -1,0 +1,11 @@
+stages:
+- name: publish
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./docker/Dockerfile
+      buildContext: .
+      tag: timedifier/ntest:${CICD_EXECUTION_SEQUENCE}
+      pushRemote: true
+      registry: registry.cn-hangzhou.aliyuncs.com
+timeout: 60
+notification: {}

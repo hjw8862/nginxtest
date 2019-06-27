@@ -6,6 +6,6 @@ stages:
       buildContext: .
       tag: ntest
       pushRemote: true
-      registry: 127.0.0.1:34717
+      registry: registry.cn-shenzhen.aliyuncs.com
 timeout: 60
 notification: {}

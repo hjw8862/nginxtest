@@ -1,3 +1,7 @@
 .git
 .idea
 .settings
+deployment.yaml
+.dockerignore
+.gitignore
+.rancher-pipeline.yml

@@ -64,4 +64,4 @@ spec:
       - path: /ntest
         backend:
           serviceName: ntest-svc
-          servicePort: 9010
+          servicePort: 8080

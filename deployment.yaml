@@ -8,6 +8,7 @@ spec:
     metadata:
       labels:
         app: ntest
+        version: "${CICD_EXECUTION_SEQUENCE}"
     spec:
       containers:
       - name: ntest
@@ -39,6 +40,7 @@ metadata:
 spec:
   selector:
     app: ntest
+    version: "${CICD_EXECUTION_SEQUENCE}"
   clusterIP: None
   ports:
   - protocol: TCP

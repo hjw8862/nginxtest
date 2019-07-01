@@ -2,6 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: ntest-deployment
+  namespace: test
 spec:
   replicas: 1
   template:
@@ -37,6 +38,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ntest-svc
+  namespace: test
 spec:
   selector:
     app: ntest
@@ -52,6 +54,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: ntest-ingress
+  namespace: test
 spec:
   tls:
   - hosts:

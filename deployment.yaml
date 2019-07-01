@@ -4,7 +4,7 @@ metadata:
   name: ntest-deployment
   namespace: test
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: ntest
@@ -20,9 +20,9 @@ spec:
         image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
         resources:
           requests:
-            memory: "256Mi"
+            memory: "128Mi"
           limits:
-            memory: "256Mi"
+            memory: "128Mi"
         ports:
         - name: http
           containerPort: 8080
